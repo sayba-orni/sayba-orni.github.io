@@ -1,11 +1,494 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sayba Orni</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sayba Kamal Orni</title>
+  <meta name="description" content="Sayba Kamal Orni — EEE Undergraduate at BUET. Research, projects, team works, and achievements." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <h1>Hello, I’m Sayba Orni</h1>
-  <p>This is my GitHub Pages website.</p>
+  <!-- Top Nav -->
+  <header class="topbar" id="top">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand__box"></span>
+        <span class="brand__name">Sayba</span><span class="brand__name brand__name--accent">Orni</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav__link active">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#team" class="nav__link">Team Works</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#awards" class="nav__link">Awards</a>
+        <a href="#research" class="nav__link">Research</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="#gallery" class="nav__link">Gallery</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" aria-hidden="true">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#team">Team Works</a>
+      <a href="#projects">Projects</a>
+      <a href="#awards">Awards</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+      <a href="#gallery">Gallery</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="wrap hero__grid">
+      <div class="hero__text">
+        <p class="hero__tag">
+          EEE Undergraduate • BUET • Embedded & Power Systems • ML for Medical Imaging
+        </p>
+
+        <h1 class="hero__title">
+          Hi, I’m <span class="accent">Sayba Kamal Orni</span>
+        </h1>
+
+        <p class="hero__sub">
+          I’m studying Electrical & Electronic Engineering at Bangladesh University of Engineering and Technology (BUET). I 
+          My work spans embedded systems, PCB design, power-system modeling, and research in medical image segmentation.
+        </p>
+
+        <div class="hero__chips">
+          <span class="chip">TOEFL iBT: 112/120</span>
+          <span class="chip">Dhaka, Bangladesh</span>
+        </div>
+
+        <div class="hero__cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn--ghost" href="#contact">Contact</a>
+        
+          <a class="btn btn--ghost" href="assets/docs/CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+
+        <div class="social">
+          <a class="iconBtn" href="https://github.com/sayba-orni" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.2.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.6-1.5-1.4-1.9-1.4-1.9-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.4 3.6 1.1.1-.8.4-1.4.8-1.7-2.6-.3-5.4-1.3-5.4-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.3a11.4 11.4 0 0 1 6 0c2.3-1.6 3.3-1.3 3.3-1.3.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.8 5.6-5.5 5.9.4.3.8 1.1.8 2.2v3.2c0 .4.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
+          </a>
+
+          <a class="iconBtn" href="https://www.linkedin.com/in/sayba-kamal-orni-5b868b25a/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.3-1.9 3.5 0 4.2 2.3 4.2 5.3v6.4zM5.3 7.4c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm1.8 13H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.8v20.4C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.8V1.8C24 .8 23.2 0 22.2 0z"/></svg>
+          </a>
+
+          <a class="iconBtn" href="mailto:orni.sayba@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__card">
+        <div class="glassCard">
+          <div class="glassCard__title">Quick Info</div>
+          <div class="kv">
+            <div class="kv__k">Phone</div><div class="kv__v">+8801818717604</div>
+            <div class="kv__k">Email</div><div class="kv__v">orni.sayba@gmail.com</div>
+            <div class="kv__k">University</div><div class="kv__v">BUET (EEE)</div>
+            <div class="kv__k">Focus</div><div class="kv__v">Embedded • Power • ML</div>
+          </div>
+          <div class="glassCard__note">
+            Tip: upload your CV as <span class="mono">assets/docs/CV.pdf</span> to enable the CV button.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__fade"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section__title">About Me</div>
+
+      <div class="aboutGrid">
+        <div class="aboutPhoto">
+          <!-- Replace with your own photo: assets/img/profile.jpg -->
+          <img src="assets/img/profile.jpg" alt="Sayba Orni" onerror="this.style.display='none'; this.parentElement.classList.add('aboutPhoto--placeholder');" />
+          <div class="aboutPhoto__placeholder">
+            Add your photo: <span class="mono">assets/img/profile.jpg</span>
+          </div>
+        </div>
+
+        <div class="aboutText">
+          <p>
+            I’m a BUET EEE undergraduate with hands-on experience in embedded systems, PCB design, and
+            system integration through competitive robotics. I also work on research problems in medical image
+            segmentation . vqa datasets and risk-aware power system optimization.
+          </p>
+
+          <div class="tabs">
+            <button class="tab active" data-tab="edu">Education</button>
+            <button class="tab" data-tab="lead">Leadership</button>
+            <button class="tab" data-tab="test">Test Scores</button>
+          </div>
+
+          <div class="tabPanel active" id="tab-edu">
+            <div class="timeline">
+              <div class="tItem">
+                <div class="tTitle">Bangladesh University of Engineering and Technology (BUET)</div>
+                <div class="tMeta">B.Sc. in Electrical and Electronic Engineering • Jan 2022 — Ongoing</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabPanel" id="tab-lead">
+            <div class="timeline">
+              <div class="tItem">
+                <div class="tTitle">PCB Manufacturing Lead — Team Interplanetar (BUET Mars Rover Team)</div>
+                <div class="tMeta">Electrical & Communication Subteam • Jul 2024 — Mar 2025</div>
+                <div class="tDesc">Designed arm-control PCB, managed electronics integration, testing, QA, and mentored juniors.</div>
+              </div>
+              <div class="tItem">
+                <div class="tTitle">Senior Member — Team Interplanetar</div>
+                <div class="tMeta">Electrical & Communication Subteam • Dec 2022 — Jul 2024</div>
+                <div class="tDesc">PCB design, debugging, sensor interfacing, wiring, and subsystem integration; field-trial prep.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabPanel" id="tab-test">
+            <div class="timeline">
+              <div class="tItem">
+                <div class="tTitle">TOEFL iBT: 112 / 120</div>
+                <div class="tMeta">Test date: Dec 6, 2025</div>
+                <div class="tDesc">Strong English proficiency for research communication and international programs.</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="miniCards">
+        <div class="miniCard">
+          <div class="miniCard__h"> Courses I loved in my Undergrad</div>
+          <ul>
+            <li>AI & ML (+ Lab)</li>
+            <li>Probability & Statistics</li>
+            <li>Linear Algebra</li>
+            <li>Digital Electronics (+ Lab)</li>
+            <li>Medical Imaging</li>
+            <li>Control Systems (+ Lab)</li>
+            <li>Robotics and Automation (+ Lab) (ongoing)</li>
+          </ul>
+        </div>
+
+        <div class="miniCard">
+          <div class="miniCard__h">Core Strengths</div>
+          <ul>
+            <li>PCB design + hardware debugging</li>
+            <li>Embedded system designing (STM32/ESP/Arduino)</li>
+            <li>Power system modeling (PSSE / PSAF)</li>
+            <li>ML/DL pipelines for segmentation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <div class="section__title">My Skills</div>
+
+      <div class="cards4">
+        <div class="skillCard">
+          <div class="skillCard__title">Software & Tools</div>
+          <div class="skillCard__text">
+            Altium Designer, Eagle, EasyEDA • PSAF, PSS/E • Proteus, PSPICE • Intel Quartus Prime (Verilog) • Keil μVision 4/5
+          </div>
+        </div>
+
+        <div class="skillCard">
+          <div class="skillCard__title">Programming</div>
+          <div class="skillCard__text">
+            Python (ML/DL), MATLAB, C, C++
+          </div>
+        </div>
+
+        <div class="skillCard">
+          <div class="skillCard__title">Embedded / MCUs</div>
+          <div class="skillCard__text">
+            Arduino, Raspberry Pi Pico (RP2040), STM32, ESP-01 (ESP8266)
+          </div>
+        </div>
+
+        <div class="skillCard">
+          <div class="skillCard__title">Hardware</div>
+          <div class="skillCard__text">
+            Soldering • Wiring • Sensor interfacing • PCB bring-up & testing
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM WORKS -->
+  <section class="section" id="team">
+    <div class="wrap">
+      <div class="section__title">Team Works</div>
+
+      <div class="cards3">
+        <article class="workCard">
+          <div class="workCard__img">
+            <img src="assets/img/team_rover.jpg" alt="Team Interplanetar Rover" onerror="this.style.display='none'; this.parentElement.classList.add('imgPh');" />
+            <div class="imgPh__txt">Add image: assets/img/team_rover.jpg</div>
+          </div>
+          <div class="workCard__body">
+            <h3>Team Interplanetar — BUET Mars Rover Team</h3>
+            <p>
+              PCB Manufacturing Lead (Electrical & Communication Subteam): arm-control PCB, system electronics,
+              testing, QA, integration; mentored juniors during subsystem deployment.
+            </p>
+          </div>
+        </article>
+
+        <article class="workCard">
+          <div class="workCard__img">
+            <img src="assets/img/workshop.jpg" alt="Workshop" onerror="this.style.display='none'; this.parentElement.classList.add('imgPh');" />
+            <div class="imgPh__txt">Add image: assets/img/workshop.jpg</div>
+          </div>
+          <div class="workCard__body">
+            <h3>Instructor — Interplanetar Workshop 2023</h3>
+            <p>
+              Conducted hands-on sessions on microcontroller boards, sensors, Arduino/ESP32 prototyping,
+              and SPICE simulation (Proteus/PSPICE).
+            </p>
+          </div>
+        </article>
+
+        <article class="workCard">
+          <div class="workCard__img">
+            <img src="assets/img/robotics.jpg" alt="Robotics" onerror="this.style.display='none'; this.parentElement.classList.add('imgPh');" />
+            <div class="imgPh__txt">Add image: assets/img/robotics.jpg</div>
+          </div>
+          <div class="workCard__body">
+            <h3>BUET Robotics Society — Team Nuvola</h3>
+            <p>
+              Electronics contributor for Line Following Robot and Micromouse maze-solver:
+              circuit design, sensor interfacing, and power management.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="section__title">Projects</div>
+
+      <div class="cards2">
+        <article class="projCard">
+          <div class="projCard__head">
+            <h3>Prochesta v3.0 — BUET’s Mars Rover</h3>
+            <div class="projCard__meta">2022–2024</div>
+          </div>
+          <p>Arm-control PCB, wiring, sensor integration; full-system debugging and field-test validation. Participated in URC 2023, ERC 2023, ARC 2023–24.</p>
+          <div class="links">
+            <a href="https://youtu.be/1zS0hY8SOF4?si=TgbvR32QqYaRRGML" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://github.com/sayba-orni/arm_procheshtaV3.0" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://docs.google.com/presentation/d/171bV2ic83cfz7sX1bMhcuH-BFbz_JGdD/edit?usp=sharing" target="_blank" rel="noopener">Slides</a>
+          </div>
+          <div class="tags"><span>PCB</span><span>Embedded</span><span>Integration</span></div>
+        </article>
+
+        <article class="projCard">
+          <div class="projCard__head">
+            <h3>Prottasha v1.0 — Concept Mars Rover (IRDC)</h3>
+            <div class="projCard__meta">2023</div>
+          </div>
+          <p>Architected complete electrical system: power distribution, motor drivers, sensors, communication, heating system.</p>
+          <div class="links">
+            <a href="https://drive.google.com/file/d/1Vl3nUgE1cis3pm9an8zW80DjUVArP9c4/view?usp=sharing" target="_blank" rel="noopener">PDF</a>
+          </div>
+          <div class="tags"><span>System Design</span><span>Power</span><span>Comms</span></div>
+        </article>
+
+        <article class="projCard">
+          <div class="projCard__head">
+            <h3>Skin-Lesion Diagnosis Pipeline (ISIC 2017)</h3>
+            <div class="projCard__meta">2025</div>
+          </div>
+          <p>3-stage pipeline: MRP-UNet segmentation, mask-aware classification, CAM-enhanced refinement. Dice 0.8712, Jaccard 0.7965, accuracy 73%.</p>
+          <div class="links">
+            <a href="https://github.com/ornisk015/Seg_aided_classification" target="_blank" rel="noopener">GitHub</a>
+          </div>
+          <div class="tags"><span>DL</span><span>Medical Imaging</span><span>Segmentation</span></div>
+        </article>
+
+        <article class="projCard">
+          <div class="projCard__head">
+            <h3>Battery Charge Controller with Auto Cutoff</h3>
+            <div class="projCard__meta">2024</div>
+          </div>
+          <p>Designed a LiPo charger from scratch: separate buck-converter and charger PCBs, validated cutoff accuracy experimentally.</p>
+          <div class="links">
+            <a href="https://github.com/sayba-orni/charger_autocutoff" target="_blank" rel="noopener">GitHub</a>
+          </div>
+          <div class="tags"><span>Power Electronics</span><span>PCB</span><span>Testing</span></div>
+        </article>
+
+        <article class="projCard">
+          <div class="projCard__head">
+            <h3>Kvasir-AnswerNet: Single-Word Medical VQA</h3>
+            <div class="projCard__meta">2025</div>
+          </div>
+          <p>Built a medical VQA model on Kvasir-VQA for reliable single-word answer prediction.</p>
+          <div class="links">
+            <a href="https://github.com/sayba-orni/KVASIR_answernet" target="_blank" rel="noopener">GitHub</a>
+          </div>
+          <div class="tags"><span>VQA</span><span>DL</span><span>Healthcare</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section class="section" id="awards">
+    <div class="wrap">
+      <div class="section__title">Awards & Achievements</div>
+      
+      <div class="cards2">
+        <div class="awardCard">
+          <h3>Anatolian Rover Challenge (ARC) 2024</h3>
+          <p>Team position: <b>2nd</b> (Preliminary) • Role: Electrical Sub-team Member</p>
+        </div>
+        <div class="awardCard">
+          <h3>Anatolian Rover Challenge (ARC) 2023</h3>
+          <p>Team position: <b>1st</b> (Preliminary), <b>10th</b> (Final) • Role: Electrical Sub-team Member</p>
+        </div>
+
+        <div class="awardCard">
+          <h3>International Rover Design Challenge (IRDC) 2023</h3>
+          <p>Team position: <b>15th</b> • Role: Electrical Sub-team Member</p>
+        </div>
+
+        <div class="awardCard">
+          <h3>University Rover Challenge (URC) 2023</h3>
+          <p>Team position: <b>27th</b> • Role: Electrical Sub-team Member</p>
+        </div>
+
+        <div class="awardCard">
+          <h3>Dhaka Education Board Scholarship (General)</h3>
+          <p>Awarded by the Ministry of Education of Bangladesh • <b>2020, 2018</b></p>
+        </div>
+
+        <div class="awardCard">
+          <h3>Kazi Serajul Islam Gold Medal (Best Girl of the Year 2017)</h3>
+          <p>Awarded by Viqarunnisa Noon School and College for academic and co-curricular excellence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="section" id="research">
+    <div class="wrap">
+      <div class="section__title">Research</div>
+
+      <div class="pubList">
+
+        <article class="pub">
+          <h3>SAE-MRF: Scale-Adaptive Encoder with Multi-Receptive-Field Blocks</h3>
+          <div class="pub__meta">Accepted — ICCIT 2025 • 1st author</div>
+          <p>Introduced MRF encoder blocks weighted by a Scale-Attention Gate; improved Dice/IoU over U-Net baselines on MoNuSeg (5-fold CV).</p>
+        </article>
+
+        <article class="pub">
+          <h3>Risk-Aware SVC Placement on a Renewable-Dominated IEEE 14-Bus System</h3>
+          <div class="pub__meta">Accepted — IEEE WIE-ECE Conference 2025 • 1st author</div>
+          <p>Monte Carlo framework with stochastic load, solar/wind uncertainty, N-1 contingencies; CVaR-optimized SVC placement outperformed greedy baselines.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="section__title">Contact</div>
+
+      <div class="contactGrid">
+        <div class="contactCard">
+          <div class="contactCard__k">Email</div>
+          <div class="contactCard__v"><a href="mailto:orni.sayba@gmail.com">orni.sayba@gmail.com</a></div>
+        </div>
+
+        <div class="contactCard">
+          <div class="contactCard__k">Phone</div>
+          <div class="contactCard__v"><a href="tel:+8801818717604">+8801818717604</a></div>
+        </div>
+
+        <div class="contactCard">
+          <div class="contactCard__k">GitHub</div>
+          <div class="contactCard__v"><a href="https://github.com/sayba-orni" target="_blank" rel="noopener">github.com/sayba-orni</a></div>
+        </div>
+
+        <div class="contactCard">
+          <div class="contactCard__k">LinkedIn</div>
+          <div class="contactCard__v"><a href="https://www.linkedin.com/in/sayba-kamal-orni-5b868b25a/" target="_blank" rel="noopener">linkedin.com/in/sayba-kamal-orni</a></div>
+        </div>
+      </div>
+
+      <div class="footer">
+        © <span id="year"></span> Sayba Kamal Orni • Built on GitHub Pages
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <div class="wrap">
+      <div class="section__title">Gallery</div>
+
+      <div class="gallery">
+        <button class="gItem" data-img="assets/img/g1.jpg" data-title="Rover Field Test">
+          <img src="assets/img/g1.jpg" alt="Gallery image 1" onerror="this.parentElement.style.display='none';" />
+        </button>
+        <button class="gItem" data-img="assets/img/g2.jpg" data-title="Team Photo">
+          <img src="assets/img/g2.jpg" alt="Gallery image 2" onerror="this.parentElement.style.display='none';" />
+        </button>
+        <button class="gItem" data-img="assets/img/g3.jpg" data-title="Poster / Presentation">
+          <img src="assets/img/g3.jpg" alt="Gallery image 3" onerror="this.parentElement.style.display='none';" />
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <div class="modal__top">
+        <div class="modal__title" id="modalTitle">Image</div>
+        <button class="modal__close" id="modalClose" aria-label="Close">×</button>
+      </div>
+      <img class="modal__img" id="modalImg" alt="Selected" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
