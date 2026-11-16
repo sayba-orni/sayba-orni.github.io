@@ -78,3 +78,38 @@ modalBackdrop?.addEventListener("click", closeModal);
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && modal.classList.contains("show")) closeModal();
 });
+
+// Filter the visual project showcase
+const filterButtons = document.querySelectorAll('.filter-btn');
+const showcaseCards = document.querySelectorAll('.showcase');
+filterButtons.forEach(button => button.addEventListener('click', () => {
+  const filter = button.dataset.filter;
+  filterButtons.forEach(b => { const selected = b === button; b.classList.toggle('is-active', selected); b.setAttribute('aria-pressed', String(selected)); });
+  showcaseCards.forEach(card => { card.hidden = filter !== 'all' && card.dataset.category !== filter; });
+}));
+// Reuse the existing gallery lightbox for PCB and rover project photographs
+const projectPreviewButtons = document.querySelectorAll('.showcase__media[data-preview]');
+projectPreviewButtons.forEach(button => button.addEventListener('click', () => {
+  if (!button.dataset.preview || !modal || !modalImg || !modalTitle) return;
+  modalImg.src = button.dataset.preview;
+  modalTitle.textContent = button.dataset.title || 'Project image';
+  modal.classList.add('show');
+  modal.setAttribute('aria-hidden', 'false');
+  modalClose?.focus();
+}));
+
+
+// Engineering gallery filters
+const engineeringFilters = document.querySelectorAll('.eng-filter');
+const engineeringTiles = document.querySelectorAll('.eng-tile');
+engineeringFilters.forEach(button => button.addEventListener('click', () => {
+  const selectedCategory = button.dataset.engFilter;
+  engineeringFilters.forEach(b => {
+    const active = b === button;
+    b.classList.toggle('active', active);
+    b.setAttribute('aria-pressed', String(active));
+  });
+  engineeringTiles.forEach(tile => {
+    tile.hidden = selectedCategory !== 'all' && tile.dataset.engCategory !== selectedCategory;
+  });
+}));
