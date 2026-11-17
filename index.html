@@ -29,7 +29,8 @@
         <a href="#team" class="nav__link">Team Works</a>
         <a href="#projects" class="nav__link">Projects</a>
         <a href="#awards" class="nav__link">Awards</a>
-        <a href="#research" class="nav__link">Research</a>
+        <a href="#research-focus" class="nav__link">Research Interests</a>
+        <a href="#research" class="nav__link">Publications</a>
         <a href="#contact" class="nav__link">Contact</a>
         <a href="#gallery" class="nav__link">Gallery</a>
       </nav>
@@ -46,7 +47,8 @@
       <a href="#team">Team Works</a>
       <a href="#projects">Projects</a>
       <a href="#awards">Awards</a>
-      <a href="#research">Research</a>
+      <a href="#research-focus">Research Interests</a>
+      <a href="#research">Publications</a>
       <a href="#contact">Contact</a>
       <a href="#gallery">Gallery</a>
     </div>
@@ -57,7 +59,7 @@
     <div class="wrap hero__grid">
       <div class="hero__text">
         <p class="hero__tag">
-          ELECTRICAL ENGINEER  /  PCB DESIGN  /  ROBOTICS  /  MEDICAL AI
+          EEE GRADUATE  /  SIGNAL PROCESSING  /  MACHINE LEARNING  /  SENSOR FUSION
         </p>
 
         <h1 class="hero__title">
@@ -66,17 +68,19 @@
 
         <p class="hero__sub">
           I graduated in Electrical & Electronic Engineering from Bangladesh University of Engineering and Technology (BUET). 
-          My work spans embedded systems, PCB design, power-system modeling, and research in medical image segmentation.
+          My research interests focus on digital signal processing, machine learning, and combining information from multiple sensors, especially when one sensor is noisy or unreliable. My PCB and embedded systems experience supports this interest in real-world sensing.
         </p>
 
         <div class="hero__chips">
           <span class="chip">GRE: 327/340 · Q168 · V159</span>
           <span class="chip">TOEFL iBT: 112/120</span>
-          <span class="chip">PCB Design &amp; Robotics</span>
+          <span class="chip">DSP + Machine Learning</span>
+          <span class="chip">Multimodal Sensor Fusion</span>
         </div>
 
         <div class="hero__cta">
-          <a class="btn" href="#projects">Explore My Work ↓</a>
+          <a class="btn" href="#research-focus">My Research Interests ↓</a>
+          <a class="btn btn--ghost" href="#projects">Explore Projects</a>
           <a class="btn btn--ghost" href="#contact">Contact</a>
         
           <a class="btn btn--ghost" href="assets/docs/CV.pdf" target="_blank" rel="noopener">Download CV</a>
@@ -113,6 +117,22 @@
     <div class="hero__fade"></div>
   </section>
 
+  <!-- RESEARCH FOCUS -->
+  <section class="section focus-section" id="research-focus">
+    <div class="wrap">
+      <div class="section__title">Research Interests</div>
+      <p class="focus-eyebrow">SIGNAL PROCESSING / MACHINE LEARNING / SENSOR FUSION</p>
+      <h2 class="focus-heading">Learning from multiple sensors without losing what makes each one useful.</h2>
+      <div class="focus-statement"><p>Coming from an EEE background, I would like to work on similar problems where I can apply my knowledge of digital signal processing while developing machine learning models for real-world sensing applications. This combination of signal processing and machine learning is where my research interests lie. I am interested in working on research problems such as how we can combine information from different sensors without losing useful information from either one, especially when one sensor is noisy or unreliable.</p></div>
+      <div class="focus-grid">
+        <div class="focus-item"><span>01 / FOUNDATION</span><h3>Digital Signal Processing</h3><p>Applying my EEE background to understand signals, noise, and the information captured by sensors.</p></div>
+        <div class="focus-item"><span>02 / METHODS</span><h3>Machine Learning for Sensing</h3><p>Developing models that learn useful patterns from real-world sensor measurements.</p></div>
+        <div class="focus-item"><span>03 / RESEARCH QUESTION</span><h3>Robust Sensor Fusion</h3><p>Exploring how to combine complementary sensor information when a sensor becomes noisy or unreliable.</p></div>
+      </div>
+      <p class="focus-footnote">My medical imaging research and hands-on electronics projects are part of the background I bring to these questions.</p>
+    </div>
+  </section>
+
   <!-- ABOUT -->
   <section class="section" id="about">
     <div class="wrap">
@@ -128,7 +148,7 @@
 
         <div class="aboutText">
           <p>
-            I am an Electrical and Electronic Engineering graduate from Bangladesh University of Engineering and Technology (BUET), with hands-on experience in embedded systems, PCB design, and system integration through competitive robotics. My research interests include medical image segmentation, visual question answering, and risk-aware power system optimization. I am passionate about developing intelligent systems that bridge hardware engineering and artificial intelligence.
+            I am an Electrical and Electronic Engineering graduate from Bangladesh University of Engineering and Technology (BUET), with hands-on experience in embedded systems, PCB design, and system integration through competitive robotics. My experience includes medical image segmentation, visual question answering, and power-system optimization. I am now especially interested in using signal processing and machine learning together for real-world sensing problems.
           </p>
 
           <div class="tabs">
@@ -300,7 +320,7 @@
   <!-- INTERACTIVE PROJECT SHOWCASE -->
   <section class="section projects-feature" id="projects"><div class="wrap">
     <p class="feature-kicker">SELECTED WORK / HARDWARE + RESEARCH</p>
-    <div class="feature-heading"><div><h2>Built, tested, explored.</h2><p>From power electronics and rover control boards to medical imaging research.</p></div><span class="feature-count">06 / projects</span></div>
+    <div class="feature-heading"><div><h2>Built, tested, explored.</h2><p>From power electronics and rover control boards to medical imaging research.</p></div><span class="feature-count">07 / projects</span></div>
     <div class="project-filters" role="group" aria-label="Filter projects"><button class="filter-btn is-active" data-filter="all" aria-pressed="true">All projects</button><button class="filter-btn" data-filter="pcb" aria-pressed="false">PCB & Electronics</button><button class="filter-btn" data-filter="robotics" aria-pressed="false">Rovers & Robotics</button><button class="filter-btn" data-filter="ai" aria-pressed="false">Medical AI</button></div>
     <div class="showcase-grid"><article class="showcase" data-category="pcb">
   <button class="showcase__media" type="button" data-preview="assets/img/charger-pcb.jpg" data-title="Battery Charger with Automatic Cutoff" aria-label="Enlarge image of Battery Charger with Automatic Cutoff"><img src="assets/img/charger-pcb.jpg" loading="lazy" alt="Battery Charger with Automatic Cutoff" /><span class="showcase__zoom">View image ↗</span></button>
@@ -309,6 +329,10 @@
 <article class="showcase" data-category="pcb">
   <button class="showcase__media" type="button" data-preview="assets/img/buck-converter-pcb.jpg" data-title="Custom DC–DC Buck Converter" aria-label="Enlarge image of Custom DC–DC Buck Converter"><img src="assets/img/buck-converter-pcb.jpg" loading="lazy" alt="Custom DC–DC Buck Converter" /><span class="showcase__zoom">View image ↗</span></button>
   <div class="showcase__body"><div class="showcase__eyebrow">PCB DESIGN · POWER CONVERSION <span>2024</span></div><h3>Custom DC–DC Buck Converter</h3><p>Designed a dedicated step-down converter PCB for the battery charging system, including component placement and routing.</p><a href="https://github.com/sayba-orni/charger_autocutoff" target="_blank" rel="noopener noreferrer">Explore project ↗</a></div>
+ </article>
+<article class="showcase" data-category="pcb">
+  <button class="showcase__media" type="button" data-preview="assets/img/cpld-ticket-vending-machine.jpg" data-title="CPLD-Based Ticket Vending Machine for Dhaka Metro Rail" aria-label="Enlarge image of CPLD-Based Ticket Vending Machine"><img src="assets/img/cpld-ticket-vending-machine.jpg" loading="lazy" alt="LP-2900 CPLD/FPGA digital logic development board used for the Dhaka Metro Rail ticket vending machine project" /><span class="showcase__zoom">View image ↗</span></button>
+  <div class="showcase__body"><div class="showcase__eyebrow">DIGITAL LOGIC · VERILOG HDL <span>2024</span></div><h3>CPLD-Based Ticket Vending Machine for Dhaka Metro Rail</h3><p>Designed and validated a Verilog-based CPLD ticket vending machine using Quartus II and the LP-2900 board.</p><a href="https://www.researchgate.net/publication/417659549_A_Compact_CPLD-Based_Ticket_Vending_Machine_for_Dhaka_Metro_Rail" target="_blank" rel="noopener noreferrer">Read project paper ↗</a></div>
  </article>
 <article class="showcase" data-category="robotics">
   <button class="showcase__media" type="button" data-preview="assets/img/team_rover.jpg" data-title="Prochesta v3.0 — BUET Mars Rover" aria-label="Enlarge image of Prochesta v3.0 — BUET Mars Rover"><img src="assets/img/team_rover.jpg" loading="lazy" alt="Prochesta v3.0 — BUET Mars Rover" /><span class="showcase__zoom">View image ↗</span></button>
@@ -369,7 +393,7 @@
   <!-- RESEARCH -->
   <section class="section" id="research">
     <div class="wrap">
-      <div class="section__title">Research</div>
+      <div class="section__title">Publications</div>
 
       <div class="pubList">
 
@@ -429,7 +453,7 @@
       <div class="gallery-intro">
         <div><div class="feature-kicker">ENGINEERING / VISUAL ARCHIVE</div>
           <h2>From schematic to system.</h2>
-          <p>A closer look at my PCB layouts, power-electronics designs and rover engineering work. Select an image or animated demonstration to inspect it at full size.</p>
+          <p>A closer look at my PCB layouts, power-electronics designs and rover engineering work.</p>
         </div>
         <a class="gallery-repo" href="https://github.com/sayba-orni" target="_blank" rel="noopener noreferrer">Explore GitHub ↗</a>
       </div>
