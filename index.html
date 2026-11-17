@@ -489,14 +489,15 @@
       <div class="gallery-intro">
         <div><div class="feature-kicker">ENGINEERING / VISUAL ARCHIVE</div>
           <h2>From schematic to system.</h2>
-          <p>A closer look at my PCB layouts, power-electronics designs, digital logic, circuit simulations and rover engineering work.</p>
+          <p>A closer look at my PCB layouts, sampling circuits, UAV imagery, vegetation analysis, digital logic and rover engineering work.</p>
         </div>
         <a class="gallery-repo" href="https://github.com/sayba-orni" target="_blank" rel="noopener noreferrer">Explore GitHub ↗</a>
       </div>
       <div class="engineering-filters" role="group" aria-label="Filter engineering gallery">
-        <button class="eng-filter active" type="button" data-eng-filter="all" aria-pressed="true">All work <span>12</span></button>
-        <button class="eng-filter" type="button" data-eng-filter="pcb" aria-pressed="false">PCB &amp; circuits <span>06</span></button>
+        <button class="eng-filter active" type="button" data-eng-filter="all" aria-pressed="true">All work <span>18</span></button>
+        <button class="eng-filter" type="button" data-eng-filter="pcb" aria-pressed="false">PCB &amp; circuits <span>08</span></button>
         <button class="eng-filter" type="button" data-eng-filter="rover" aria-pressed="false">Rover engineering <span>06</span></button>
+        <button class="eng-filter" type="button" data-eng-filter="uav" aria-pressed="false">UAV &amp; sensing <span>04</span></button>
       </div>
       <div class="engineering-grid">
         <button class="eng-tile eng-tile--wide gItem" type="button" data-eng-category="pcb" data-img="assets/img/charger-pcb.jpg" data-title="Battery Charger — Altium PCB Layout">
@@ -547,9 +548,33 @@
           <img src="assets/img/rover-field-test.png" loading="lazy" alt="Mars rover during an outdoor field test with team members" />
           <span class="eng-tile__meta"><small>12 / FIELD TESTING</small><strong>Rover in the Field</strong><span>Outdoor system demonstration</span></span><span class="eng-tile__open" aria-hidden="true">↗</span>
         </button>
+        <button class="eng-tile gItem" type="button" data-eng-category="pcb" data-img="assets/img/sampler-pcb.jpg" data-title="Signal Sampling and Reconstruction — PCB">
+          <img src="assets/img/sampler-pcb.jpg" loading="lazy" alt="Signal Sampling and Reconstruction — PCB" />
+          <span class="eng-tile__meta"><small>13 / SIGNAL PROCESSING</small><strong>Sampling & Reconstruction PCB</strong><span>Altium-designed signal sampling board</span></span><span class="eng-tile__open" aria-hidden="true">↗</span>
+        </button>
+        <button class="eng-tile gItem" type="button" data-eng-category="pcb" data-img="assets/img/sampler-schematic.jpg" data-title="Signal Sampling and Reconstruction — Schematic">
+          <img src="assets/img/sampler-schematic.jpg" loading="lazy" alt="Signal Sampling and Reconstruction — Schematic" />
+          <span class="eng-tile__meta"><small>14 / CIRCUIT DESIGN</small><strong>Sampler Circuit Schematic</strong><span>555 timer · LF398 sample-and-hold</span></span><span class="eng-tile__open" aria-hidden="true">↗</span>
+        </button>
+        <button class="eng-tile gItem" type="button" data-eng-category="uav" data-img="assets/img/uav-drone.jpg" data-title="UAV Vegetation Monitoring — Drone Hardware">
+          <img src="assets/img/uav-drone.jpg" loading="lazy" alt="UAV Vegetation Monitoring — Drone Hardware" />
+          <span class="eng-tile__meta"><small>15 / UAV HARDWARE</small><strong>UAV Platform</strong><span>RGB-image acquisition platform</span></span><span class="eng-tile__open" aria-hidden="true">↗</span>
+        </button>
+        <button class="eng-tile eng-tile--wide gItem" type="button" data-eng-category="uav" data-img="assets/img/uav-exg-vari.png" data-title="RGB Vegetation Analysis — ExG and VARI">
+          <img src="assets/img/uav-exg-vari.png" loading="lazy" alt="RGB Vegetation Analysis — ExG and VARI" />
+          <span class="eng-tile__meta"><small>16 / VEGETATION INDICES</small><strong>ExG & VARI Analysis</strong><span>RGB-based vegetation index visualizations</span></span><span class="eng-tile__open" aria-hidden="true">↗</span>
+        </button>
+        <button class="eng-tile gItem" type="button" data-eng-category="uav" data-img="assets/img/uav-frames.png" data-title="UAV Video — Extracted Frames">
+          <img src="assets/img/uav-frames.png" loading="lazy" alt="UAV Video — Extracted Frames" />
+          <span class="eng-tile__meta"><small>17 / IMAGE PROCESSING</small><strong>UAV Frame Extraction</strong><span>Sample frames from recorded flight</span></span><span class="eng-tile__open" aria-hidden="true">↗</span>
+        </button>
+        <button class="eng-tile gItem" type="button" data-eng-category="uav" data-img="assets/img/uav-3d-mapping.png" data-title="UAV Mapping — 3D Visualization">
+          <img src="assets/img/uav-3d-mapping.png" loading="lazy" alt="UAV Mapping — 3D Visualization" />
+          <span class="eng-tile__meta"><small>18 / MAPPING</small><strong>3D Mapping Visualization</strong><span>Illustrative mapping with synthetic coordinates</span></span><span class="eng-tile__open" aria-hidden="true">↗</span>
+        </button>
       </div>
-      <div class="engineering-note"><span>MORE FROM THE WORKBENCH</span><p>The Prochesta v3.0 arm-control PCB layout, circuit schematic, rover-arm photograph and animated demonstration are sourced from the original project repository. Explore the Altium source files and manufacturing exports on GitHub.</p>
-        <div><a href="https://github.com/sayba-orni/arm_procheshtaV3.0" target="_blank" rel="noopener noreferrer">Rover arm-control project ↗</a><a href="https://github.com/sayba-orni/charger_autocutoff" target="_blank" rel="noopener noreferrer">Charger PCB source ↗</a></div>
+      <div class="engineering-note"><span>MORE FROM THE WORKBENCH</span><p>The archive brings together PCB layouts, sampling-circuit designs, rover engineering photographs, and UAV-based vegetation analysis. The UAV mapping visuals use synthetic coordinates and are not GPS-validated survey maps.</p>
+        <div><a href="https://github.com/sayba-orni/arm_procheshtaV3.0" target="_blank" rel="noopener noreferrer">Rover arm-control project ↗</a><a href="https://github.com/sayba-orni/charger_autocutoff" target="_blank" rel="noopener noreferrer">Charger PCB source ↗</a><a href="https://github.com/sayba-orni/signal-sampling-reconstruction-pcb" target="_blank" rel="noopener noreferrer">Sampler PCB ↗</a><a href="https://github.com/sayba-orni/uav-vegetation-stress-mapping" target="_blank" rel="noopener noreferrer">UAV vegetation mapping ↗</a></div>
       </div>
     </div>
   </section>
